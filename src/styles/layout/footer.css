@@ -1,3 +1,26 @@
 footer {
-  @apply hidden;
+  /* @apply hidden; */
+  .social-icon{
+    @apply flex flex-row justify-center items-center  gap-5 text-4xl;
+    a{
+      @apply text-gray-600 ;
+    }
+    i{
+      @apply duration-300;
+    }
+    i:hover{
+      @apply text-gray-700 ;
+    }
+    &:hover a{
+      @apply text-gray-400;
+    }
+  }
+  .footer-text{
+    p{
+      @apply text-gray-600 text-center my-5;
+      &:last-child{
+       @apply mt-10;
+      }
+    }
+  }
 }
