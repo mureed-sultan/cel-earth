@@ -16,9 +16,15 @@
 
 nav {
   width: 75vw;
-  @apply m-auto;
+  img{
+    @apply mb-10 m-auto;
+    max-width: 60%;
+  }
+  @apply m-auto relative;
   ul {
-    @apply flex justify-center;
+    transform: translate(0,-50vh);
+    transition-duration: 250ms;
+    @apply justify-center text-center;
     li {
       @apply mx-3;
       a{
@@ -26,5 +32,28 @@ nav {
       }
     }
   }
+  .menu-btn{
+    @apply w-4 absolute right-0;
+   top: 10%;
+    div{
+      border-top: 4px solid red;
+      @apply mt-1;
+    }
+  }
+
+  @screen md{
+    ul{
+      display:flex;
+      transform: translate(0,0);
+
+    }
+    .menu-btn{
+      @apply hidden;
+    }
+  }
 }
+
 /* purgecss end ignore */
+.display-item{
+  transform: translate(0,0) !important;
+}

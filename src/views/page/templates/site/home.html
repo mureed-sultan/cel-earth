@@ -3,7 +3,7 @@
     <div class="banner-text">
       <h4>40% Off</h4>
       <p>All online Workshops with code <span>ONLINE2020</span></p>
-      <button>Shop now</button>
+      <button data-act="click" data-func="menuToogle" >Shop now</button>
     </div>
   </div>
   <div class="banner-details container">
@@ -32,7 +32,8 @@
     <h4>Translation ny Nadar khalid</h4>
     <div class="spritual" data-list='{"prop":"rumiBooks"}'>
       <div class="book-box">
-        <img src={val.image} alt="Book 1">
+        <!-- ever use data-src when use shortcut path  -->
+        <img data-src={val.image} alt="Book 1">
         <h4>{val.title}</h4>
         <p>${val.price}</p>
         <div>
