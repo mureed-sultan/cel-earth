@@ -1,0 +1,48 @@
+<div id="home" data-template="site/home">
+  <div class="home-banner">
+    <div class="banner-text">
+      <h4>40% Off</h4>
+      <p>All online Workshops with code <span>ONLINE2020</span></p>
+      <button>Shop now</button>
+    </div>
+  </div>
+  <div class="banner-details container">
+    <p>
+      Our mission at CalEarth is to further the research, development, and
+      education of Superadobe, a safe and accessible form of Earth Architecture
+      that provides environmentally and financially sustainable living spaces.
+      CalEarth is engaging in ground-breaking research and education that
+      fundamentally transforms housing options worldwide.
+    </p>
+  </div>
+  <div class="learn-campus container">
+    <div class="visit-us learn-campus-box">
+      <h4>Visit US</h4>
+      <p>Experience Super Adobe in Person</p>
+      <button>Learn More</button>
+    </div>
+    <div class="learn-build learn-campus-box">
+      <h4>Learn to Build</h4>
+      <p>We offer classes online and at out campus in Hesperia, CA</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+  <div class="new-books container">
+    <h4>New rumi books</h4>
+    <h4>Translation ny Nadar khalid</h4>
+    <div class="spritual" data-list='{"prop":"rumiBooks"}'>
+      <div class="book-box">
+        <img src={val.image} alt="Book 1">
+        <h4>{val.title}</h4>
+        <p>${val.price}</p>
+        <div>
+          <label id="quantity">Quantity</label>
+          <input type="number" size="4" max="9999" value="1" id="quantity">
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ata-name="todoList" data-list='{"prop": "todoList", "sub": "<li>Congrats! Your To Do list is empty.</li>", "vars": {"v": "todo"}}' -->

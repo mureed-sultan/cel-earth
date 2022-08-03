@@ -1,0 +1,24 @@
+name: setjs-org
+client: stateempire
+project: set
+version: 0.0.1
+email: help@stateempire.com
+local:
+  environment: local
+  domain: localhost
+  site_port: 65040
+development:
+  environment: development
+  domain: beta.setjs.org
+  subdomain: false
+  sslcert: arn:aws:acm:us-east-1:423611532717:certificate/cf0a261a-91f5-4131-b937-689af2de4ac9
+  cache_control_max_age: 360
+  server_edge: false
+master:
+  environment: production
+  domain: setjs.org
+  subdomain: true
+  sslcert: arn:aws:acm:us-east-1:423611532717:certificate/cf0a261a-91f5-4131-b937-689af2de4ac9
+  cache_control_max_age: 2592000
+  server_edge: false
+  distribution_id: E26A0GSHYJODPT

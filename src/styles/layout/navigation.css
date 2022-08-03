@@ -1,0 +1,30 @@
+/* purgecss start ignore */
+.nav {
+  &-open,
+  &-closing {
+  }
+
+  &-open {
+  }
+
+  &-opening {
+  }
+
+  &-closing {
+  }
+}
+
+nav {
+  width: 75vw;
+  @apply m-auto;
+  ul {
+    @apply flex justify-center;
+    li {
+      @apply mx-3;
+      a{
+        @apply text-gray-600 text-xs; 
+      }
+    }
+  }
+}
+/* purgecss end ignore */
