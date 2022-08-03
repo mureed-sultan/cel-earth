@@ -6,11 +6,11 @@ import eventManager, {eventTypes} from 'setjs/kernel/event-manager.js';
 */
 const navFunctions = {
   menuToogle:()=>{
-    $('nav ul').toggleClass('display-item')
-    $('#home').toggleClass('display-item')
-    console.log("this workl")
+    $('nav ul').toggleClass('display-item');
+    $('#home').toggleClass('display-item');
+    // console.log("this workl");
   }
-}
+};
 export default function() {
 
   var comp = getComp('common/navigation',{},navFunctions);
