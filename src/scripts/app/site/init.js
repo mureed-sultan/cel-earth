@@ -8,7 +8,7 @@ export default function() {
   addPage('', home);
   addPaths('site', [
     'intro-superadobe',
-    'docs',
+    'learn-build',
     'docs/getting-started',
     'docs/templates',
     'docs/pages',

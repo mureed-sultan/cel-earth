@@ -1,0 +1,21 @@
+#learn-build {
+  .learn-video {
+    @apply w-screen relative overflow-hidden;
+    background: red;
+    height: calc(100vw / 3);
+
+    iframe {
+      @apply w-full;
+      height: calc(100% * 1.68);
+    }
+    .video-text{
+        @apply absolute z-10 top-0 w-full h-full flex justify-center items-center flex-col;
+        img{
+            @apply w-1o12;
+        }
+        p{
+            @apply text-white font-semibold uppercase text-2xl;
+        }
+    }
+  }
+}

@@ -22,6 +22,7 @@
 @import 'page/home';
 @import 'page/docs';
 @import 'page/adobe-intro';
+@import 'page/learn-build';
 /* purgecss end ignore */
 
 /* Utilities */
