@@ -21,6 +21,7 @@
 @import 'page/error';
 @import 'page/home';
 @import 'page/docs';
+@import 'page/adobe-intro';
 /* purgecss end ignore */
 
 /* Utilities */

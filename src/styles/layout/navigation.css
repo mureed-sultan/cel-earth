@@ -22,9 +22,9 @@ nav {
   }
   @apply m-auto relative;
   ul {
-    transform: translate(0,-50vh);
-    transition-duration: 250ms;
-    @apply justify-center text-center;
+    @apply block justify-center text-center;
+    @apply mb-10;
+
     li {
       @apply mx-3;
       a{
@@ -44,16 +44,25 @@ nav {
   @screen md{
     ul{
       display:flex;
-      transform: translate(0,0);
-
     }
     .menu-btn{
       @apply hidden;
     }
   }
 }
+@screen lg{
+  nav{
+    @apply flex justify-between items-center w-11o12; 
+    .logo{
+      margin: 0 !important;
+      img{
+        margin:auto 0;
+      }
+    }
+    ul{
+      @apply m-0;
+    }
+  }
+}
 
 /* purgecss end ignore */
-.display-item{
-  transform: translate(0,0) !important;
-}

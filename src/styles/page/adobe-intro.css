@@ -1,0 +1,7 @@
+#super-adobe-intro{
+    .adobe-banner{
+        background-image: url("/images/cal-earth/intro-banner.jpeg");
+        @apply bg-cover w-full flex justify-center items-center flex-col;
+        height: calc(100vw/2);
+    }
+}

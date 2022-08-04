@@ -1,10 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
+*{
+  box-sizing: border-box;
+}
 #home {
-  transform: translate(0, -20vh);
-  transition-duration: 250ms;
-  @screen md{
-    transform: translate(0, 0);
-  }
   .home-banner {
     background: url("../../../../images/cal-earth/Homepage_Online_Sale_01_r.jpg")
       no-repeat;
@@ -123,7 +121,7 @@
     .news-section {
       @apply grid grid-cols-1 gap-3;
       div {
-        @apply justify-self-center w-auto;
+        @apply justify-self-center w-9o12;
         img{
           @apply w-64 h-48 m-auto;
         }

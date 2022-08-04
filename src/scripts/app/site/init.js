@@ -7,7 +7,7 @@ import home from './pages/home.js';
 export default function() {
   addPage('', home);
   addPaths('site', [
-    'guide',
+    'intro-superadobe',
     'docs',
     'docs/getting-started',
     'docs/templates',
