@@ -1,7 +1,119 @@
-#super-adobe-intro{
-    .adobe-banner{
-        background-image: url("/images/cal-earth/intro-banner.jpeg");
-        @apply bg-cover w-full flex justify-center items-center flex-col;
-        height: calc(100vw/2);
+#super-adobe-intro {
+  .adobe-banner {
+    background-image: url("/images/cal-earth/intro-banner.jpeg");
+    @apply bg-cover w-full flex justify-center items-center flex-col;
+    height: calc(100vw / 2);
+    p {
+      @apply text-white text-xl font-medium uppercase pt-4 text-center;
     }
+    img {
+      width: 2.5rem;
+    }
+    @screen md {
+      height: calc(100vw / 4);
+
+      p {
+        @apply text-3xl;
+        /* background:red; */
+      }
+      img {
+        width: 5rem;
+      }
+    }
+  }
+  .adobe-intro {
+    @apply mt-8;
+    p {
+      @apply text-justify text-sm text-gray-700 mb-5;
+    }
+  }
+  .line {
+    border-top: 1px solid silver;
+    @apply my-8;
+  }
+  .how-work {
+    @apply grid gap-4 mt-8;
+    @apply grid-cols-1;
+    .image {
+      @apply w-full h-full;
+      img {
+        @apply m-auto;
+      }
+    }
+    @screen md {
+      grid-template-columns: 35% 64%;
+    }
+    .text {
+      h5 {
+        @apply text-yellow-700 text-2xl font-medium uppercase;
+      }
+      p {
+        @apply mb-2 text-gray-700;
+      }
+      h6 {
+        @apply text-gray-800;
+      }
+      ul {
+        @apply list-disc list-inside;
+      }
+    }
+  }
+  .safety-standard {
+    h6 {
+      @apply text-yellow-700 uppercase text-xl font-medium my-8;
+    }
+    .safety-container {
+      @apply grid grid-cols-1 gap-6;
+    }
+    .image-area {
+      img {
+        @apply w-full;
+      }
+    }
+    @screen sm {
+      .safety-container {
+        @apply grid-cols-2;
+      }
+    }
+    .text-area {
+      p {
+        @apply m-0 pb-5 text-center;
+        background-color: #f4f0e9;
+      }
+      p.text {
+        @apply bg-white text-left text-sm text-gray-700 mt-6;
+      }
+    }
+  }
+  .build {
+    .build-grid {
+      @apply grid grid-cols-1 gap-5;
+      @screen sm {
+        grid-template-columns: 70% 30%;
+      }
+      .text {
+        h4 {
+          @apply text-yellow-700 text-lg font-medium uppercase;
+        }
+        p {
+          @apply text-gray-700 text-sm mb-5 mt-6;
+        }
+      }
+      .image {
+        img {
+          @apply w-6o12 m-auto;
+        }
+        @screen sm {
+          img {
+            @apply w-auto;
+          }
+        }
+      }
+    }
+    .grid-reverse {
+      @screen sm {
+        grid-template-columns: 30% 70% !important;
+      }
+    }
+  }
 }
