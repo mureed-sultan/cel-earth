@@ -82,8 +82,11 @@ body {
   #main-content {
     @apply relative;
     @apply min-h-screen;
-    @apply w-full max-w-full;
+    @apply w-11o12 overflow-hidden m-auto max-w-full;
     @apply z-20;
+    @screen sm{
+      @apply w-full;
+    }
   }
 
   footer,

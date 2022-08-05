@@ -1,0 +1,7 @@
+#about{
+    @apply bg-red-600;
+    .about-banner{
+        background-image: url(../../images/cal-earth/workshop1.jpg);
+    }
+
+}

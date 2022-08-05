@@ -4,10 +4,12 @@ import './api.js';
 import './template-functions.js';
 import home from './pages/home.js';
 import learnBuild from './pages/learnBuild.js';
+import about from './pages/about.js';
 
 export default function() {
   addPage('', home);
   addPage('learn-build', learnBuild);
+  addPage('about', about);
   addPaths('site', [
     'intro-superadobe',
     'docs/getting-started',
