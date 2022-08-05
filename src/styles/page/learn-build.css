@@ -8,14 +8,50 @@
       @apply w-full;
       height: calc(100% * 1.68);
     }
-    .video-text{
-        @apply absolute z-10 top-0 w-full h-full flex justify-center items-center flex-col;
-        img{
-            @apply w-1o12;
+    .video-text {
+      @apply absolute z-10 top-0 w-full h-full flex justify-center items-center flex-col;
+      img {
+        @apply w-1o12;
+      }
+      p {
+        @apply text-white font-semibold uppercase text-base;
+        @screen sm {
+          @apply text-2xl;
         }
-        p{
-            @apply text-white font-semibold uppercase text-2xl;
+      }
+    }
+  }
+  .workshop {
+    @apply mt-10 text-center;
+    h6 {
+      @apply text-orange-500 uppercase;
+    }
+    p {
+      @apply m-0 text-sm text-gray-600;
+    }
+    .workshop-product {
+      @apply grid grid-cols-1 gap-6 mt-2;
+      @screen sm {
+        @apply grid-cols-2;
+      }
+      @screen md {
+        @apply grid-cols-3;
+      }
+      h6 {
+        @apply text-blue-300 text-xl text-left my-2;
+      }
+      div {
+        @apply m-auto w-10o12;
+        img {
+          @apply m-auto;
         }
+        @screen md {
+          @apply w-full;
+          img{
+            @apply w-full;
+          }
+        }
+      }
     }
   }
 }
