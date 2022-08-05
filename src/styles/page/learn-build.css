@@ -54,4 +54,23 @@
       }
     }
   }
+  .calendar{
+    @apply grid grid-cols-1 gap-10 mt-20;
+    @screen sm{
+      @apply grid-cols-2;
+    }
+    width: 80vw;
+    h6{
+      @apply text-center text-orange-500 uppercase text-xl;
+    }
+    ul{
+      li{
+        @apply text-sm font-semibold mb-1;
+        span{
+          @apply font-light text-gray-700;
+        }
+      
+      }
+    }
+  }
 }
